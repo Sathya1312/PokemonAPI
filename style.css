@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: whitesmoke;
+  /* background: -webkit-linear-gradient(to left, #b113d18a, #9e14aadc);
+  background: linear-gradient(to left, #13118fcb, #e20eadee); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Shadows into light";
+  margin: 0;
+}
+
+.poke-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-between;
+  justify-content: center;
+  /* display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem; */
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.pokemon {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 250 ms;
+}
+
+.pokemon:hover {
+  transform: translateY(-10px);
+  background-color: rgb(220, 10, 220);
+  color: white;
+}
+
+.pokemon .img-container {
+  background-color: rgba(146, 26, 182, 0.644);
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  text-align: center;
+  align-items: center;
+}
+
+.pokemon .img-container img {
+  margin-top: 40px;
+  max-width: auto;
+  text-align: center;
+  height: auto;
+  overflow: hidden;
+  align-items: center;
+}
+
+.pokemon .info {
+  margin-top: 20px;
+}
+
+.pokemon .number {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 0.8em;
+  padding: 5px 10px;
+  font-family: "Shadows into light";
+}
+
+.pokemon .name {
+  margin: 15px 0 7px;
+  letter-spacing: 1px;
+  font-family: "Shadows into light";
+}
+
+.pagination {
+  text-align: center;
+  margin: 30px 30px 60px;
+  /* user-select: none; */
+}
+
+.pagination li {
+  display: inline-block;
+  margin: 5px;
+  box-shadow: 0 5px 25px rgb(1 1 1 / 10%);
+}
+
+.previous-page,
+.next-page {
+  background: #0ab1ce;
+}
+
+.current-page,
+.dots {
+  background: rgb(207, 15, 15);
+}
+
+.active {
+  background: #0ab1ce;
+}
